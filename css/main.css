@@ -25,16 +25,10 @@ html {
   transform-origin: center bottom;
   animation: hour 3s linear infinite;
   left: calc(50% - 7px);
-  top: calc(50% - 60px);
+  top: calc(50% - 60px); kng
   position: absolute;
 }
 
-.hand-minute {
-  transform-origin: center bottom;
-  animation: minute 600ms linear infinite;
-  left: calc(50% - 7px);
-  top: calc(50% - 85px);
-  position: absolute;
 }
 
 @keyframes minute {
