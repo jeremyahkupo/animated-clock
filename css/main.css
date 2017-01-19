@@ -19,36 +19,39 @@ html {
 
 .hand {
   width: 14px;
+  position: absolute;
+  left: calc(50% - 7px);
+  transform-origin: center bottom;
 }
 
 .hand-hour {
-  transform-origin: center bottom;
   animation: hour 3s linear infinite;
-  left: calc(50% - 7px);
-  top: calc(50% - 60px); kng
-  position: absolute;
+  top: calc(50% - 60px);
 }
 
+.hand-minute {
+  animation: minute 600ms linear infinite;
+  top: calc(50% - 85px);
 }
 
 @keyframes minute {
 
   from {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   to {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
 
 @keyframes hour {
 
   from {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   to {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
